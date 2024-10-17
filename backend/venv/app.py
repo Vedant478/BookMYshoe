@@ -14,8 +14,9 @@ class SignUp(db.Model):
     id = db.Column(db.Integer, primary_key=True)  # Make sure the id column is here
     name = db.Column(db.String(200), nullable=False, unique=True)
     email = db.Column(db.String(200), nullable=False, unique=True)
-    password = db.Column(db.String(20), nullable=False)
-
+    password = db.Column(db.String(20), nullable=False) 
+    
+   
 # Route for the signup page
 @app.route('/signup', methods=['GET', 'POST'])
 def signup():
