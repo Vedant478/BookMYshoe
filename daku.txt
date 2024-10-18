@@ -1,0 +1,9 @@
+sudo su     --------> to go to root 
+yum install httpd -y --------> install httpd 
+
+cd /var/www/html ------> move to html folder
+
+systemctl start httpd
+systemctl enable httpd
+
+After that copy public ipv4 address and paste on browser

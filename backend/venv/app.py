@@ -46,6 +46,6 @@ def home():
     return redirect(url_for('signup'))
 
 if __name__ == '__main__':
-    with app.app_context():  # Use application context to create the tables
+    with app.app_context():  
         db.create_all()  # Create the database tables
     app.run(debug=True)
